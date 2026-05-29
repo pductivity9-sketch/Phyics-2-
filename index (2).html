@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Youth Rising — Youth Activism &amp; Climate Justice</title>
+  <meta name="description" content="How young people are leading the fight for climate justice." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,400..600&family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Atmosphere layers -->
+  <div class="atmosphere" aria-hidden="true">
+    <div class="aurora aurora-1"></div>
+    <div class="aurora aurora-2"></div>
+    <div class="grain"></div>
+  </div>
+
+  <!-- ============================ HOME VIEW ============================ -->
+  <main id="view-home" class="view view--home is-active" aria-label="Home">
+    <div class="home-inner">
+      <p class="home-eyebrow reveal">Youth Activism &amp; Climate Justice</p>
+      <h1 class="home-title reveal">Youth<span class="title-break">Rising</span></h1>
+      <p class="home-subtitle reveal">How young people are leading the fight for climate justice.</p>
+      <p class="home-intro reveal">
+        Climate change affects everyone, but not everyone is affected equally. Around the world,
+        young people are organizing, striking, educating, suing, and pressuring leaders to act.
+      </p>
+      <nav class="home-actions reveal" aria-label="Primary">
+        <button class="btn btn--primary" data-goto="explore">
+          <span>Explore</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </button>
+        <button class="btn btn--ghost" data-goto="about">About</button>
+        <button class="btn btn--ghost" data-goto="cited">Works Cited</button>
+      </nav>
+    </div>
+    <div class="scroll-hint" aria-hidden="true">A guided story in six parts</div>
+  </main>
+
+  <!-- ============================ EXPLORE VIEW ============================ -->
+  <section id="view-explore" class="view view--explore" aria-label="Explore the story" hidden>
+
+    <!-- Small Back Home control -->
+    <button class="back-home" data-goto="home" aria-label="Back to home">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>
+      <span>Home</span>
+    </button>
+
+    <!-- Mobile menu button -->
+    <button class="nav-toggle" id="navToggle" aria-label="Open section menu" aria-expanded="false" aria-controls="sidebar">
+      <span></span><span></span><span></span>
+    </button>
+
+    <!-- Collapsed hover sidebar (desktop) / slide-in nav (mobile) -->
+    <nav id="sidebar" class="sidebar" aria-label="Section navigation">
+      <div class="sidebar-rail" aria-hidden="true">
+        <span class="rail-dot"></span><span class="rail-dot"></span><span class="rail-dot"></span>
+      </div>
+      <ul class="sidebar-list">
+        <li><button class="side-link is-active" data-section="problem"><span class="num">01</span><span class="lbl">Problem</span></button></li>
+        <li><button class="side-link" data-section="impact"><span class="num">02</span><span class="lbl">Impact</span></button></li>
+        <li><button class="side-link" data-section="solution"><span class="num">03</span><span class="lbl">Solution</span></button></li>
+        <li><button class="side-link" data-section="pressure"><span class="num">04</span><span class="lbl">Pressure</span></button></li>
+        <li><button class="side-link" data-section="people"><span class="num">05</span><span class="lbl">People</span></button></li>
+        <li><button class="side-link" data-section="movements"><span class="num">06</span><span class="lbl">Movements</span></button></li>
+        <li><button class="side-link" data-section="action"><span class="num">07</span><span class="lbl">Action</span></button></li>
+      </ul>
+    </nav>
+
+    <!-- Scroll journey -->
+    <div class="explore-scroll" id="exploreScroll">
+
+      <!-- 01 PROBLEM -->
+      <article class="story" id="problem" data-section="problem">
+        <div class="story-inner">
+          <span class="story-label reveal">01 / The Problem</span>
+          <h2 class="story-h reveal">Climate change is not equal.</h2>
+          <p class="story-lead reveal">
+            Climate justice means putting fairness, human rights, and future generations at the center of climate decisions.
+          </p>
+          <div class="stat-grid">
+            <div class="glass stat-card reveal">
+              <p class="stat-text">The people who contributed least to climate change are often harmed the most.</p>
+              <p class="src">Source: UNDP, 2023</p>
+            </div>
+            <div class="glass stat-card reveal">
+              <p class="stat-big">3.3–3.6<span>billion</span></p>
+              <p class="stat-text">people live in contexts highly vulnerable to climate change.</p>
+              <p class="src">Source: IPCC, 2022</p>
+            </div>
+            <div class="glass stat-card reveal">
+              <p class="stat-text">Climate risks are highest where poverty, weak infrastructure, and inequality overlap.</p>
+              <p class="src">Source: IPCC, 2022</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 02 IMPACT -->
+      <article class="story" id="impact" data-section="impact">
+        <div class="story-inner">
+          <span class="story-label reveal">02 / Unequal Impact</span>
+          <h2 class="story-h reveal">Who pays the price?</h2>
+          <p class="story-lead reveal">Climate change does not hit every community the same way.</p>
+          <div class="impact-grid">
+            <button class="glass impact-card reveal" aria-expanded="false">
+              <h3 class="impact-title">Low-income communities</h3>
+              <div class="impact-body">
+                <p>Higher heat, flooding, unsafe housing, and fewer recovery resources.</p>
+                <p class="src">Source: NOAA, 2023</p>
+              </div>
+              <span class="impact-cue" aria-hidden="true">+</span>
+            </button>
+            <button class="glass impact-card reveal" aria-expanded="false">
+              <h3 class="impact-title">Communities of color</h3>
+              <div class="impact-body">
+                <p>Higher exposure to pollution, poor air quality, and environmental hazards.</p>
+                <p class="src">Source: NOAA, 2023</p>
+              </div>
+              <span class="impact-cue" aria-hidden="true">+</span>
+            </button>
+            <button class="glass impact-card reveal" aria-expanded="false">
+              <h3 class="impact-title">Indigenous communities</h3>
+              <div class="impact-body">
+                <p>Threats to land, culture, sovereignty, and traditional ways of living.</p>
+                <p class="src">Source: UNDP, 2023</p>
+              </div>
+              <span class="impact-cue" aria-hidden="true">+</span>
+            </button>
+            <button class="glass impact-card reveal" aria-expanded="false">
+              <h3 class="impact-title">Global South countries</h3>
+              <div class="impact-body">
+                <p>Severe climate impacts despite contributing less to global emissions.</p>
+                <p class="src">Source: UNDP, 2023; IPCC, 2023</p>
+              </div>
+              <span class="impact-cue" aria-hidden="true">+</span>
+            </button>
+            <button class="glass impact-card reveal" aria-expanded="false">
+              <h3 class="impact-title">Young people</h3>
+              <div class="impact-body">
+                <p>They inherit the long-term effects of today’s decisions.</p>
+                <p class="src">Source: UNDP, 2023</p>
+              </div>
+              <span class="impact-cue" aria-hidden="true">+</span>
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- 03 SOLUTION -->
+      <article class="story" id="solution" data-section="solution">
+        <div class="story-inner">
+          <span class="story-label reveal">03 / The Solution</span>
+          <h2 class="story-h reveal">Climate justice means solving the crisis fairly.</h2>
+          <p class="story-lead reveal">Real solutions must work at individual, community, and government levels.</p>
+          <div class="solution-grid">
+            <div class="glass solution-card reveal">
+              <h3 class="solution-title">Individual</h3>
+              <ul>
+                <li>Build climate literacy.</li>
+                <li>Share verified climate information.</li>
+                <li>Attend school board or city council meetings.</li>
+                <li>Join a youth climate organization.</li>
+                <li>Teach peers or younger students.</li>
+                <li>Help translate climate resources.</li>
+              </ul>
+              <p class="src">Sources: UNESCO; Climate Cardinals; Earth Guardians</p>
+            </div>
+            <div class="glass solution-card reveal">
+              <h3 class="solution-title">Community</h3>
+              <ul>
+                <li>Start a school climate club.</li>
+                <li>Run a school energy or waste audit.</li>
+                <li>Plant trees and create shade.</li>
+                <li>Support cooling centers and disaster preparedness.</li>
+                <li>Advocate for public transportation and walkability.</li>
+                <li>Make climate resources multilingual.</li>
+              </ul>
+              <p class="src">Sources: National Wildlife Federation; EPA; Climate Cardinals</p>
+            </div>
+            <div class="glass solution-card reveal">
+              <h3 class="solution-title">Government</h3>
+              <ul>
+                <li>Transition to clean energy and green jobs.</li>
+                <li>Create youth seats on climate councils.</li>
+                <li>Require climate education in schools.</li>
+                <li>Fund green infrastructure and fair disaster relief.</li>
+                <li>Hold governments and polluters legally accountable.</li>
+                <li>Protect Indigenous land rights.</li>
+              </ul>
+              <p class="src">Sources: UNESCO; EPA; Our Children’s Trust; One Earth</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 04 PRESSURE -->
+      <article class="story" id="pressure" data-section="pressure">
+        <div class="story-inner">
+          <span class="story-label reveal">04 / Pressure</span>
+          <h2 class="story-h reveal">How young people turn concern into change.</h2>
+          <p class="story-lead reveal">Youth activism works because it turns private fear into public pressure.</p>
+          <div class="pressure-grid">
+            <div class="glass pressure-card reveal">
+              <h3 class="pressure-title">Protest</h3>
+              <p class="pressure-text">Youth strikes and marches make climate inaction visible.</p>
+              <p class="src">Source: Fridays for Future</p>
+            </div>
+            <div class="glass pressure-card reveal">
+              <h3 class="pressure-title">Education</h3>
+              <p class="pressure-text">Young people teach others about climate justice, climate science, and community action.</p>
+              <p class="src">Source: UNESCO; Climate Cardinals</p>
+            </div>
+            <div class="glass pressure-card reveal">
+              <h3 class="pressure-title">Legal Action</h3>
+              <p class="pressure-text">Youth lawsuits argue that governments must protect future generations.</p>
+              <p class="src">Source: Our Children’s Trust</p>
+            </div>
+            <div class="glass pressure-card reveal">
+              <h3 class="pressure-title">Language Access</h3>
+              <p class="pressure-text">Translation helps more communities understand climate change and take action.</p>
+              <p class="src">Source: Climate Cardinals</p>
+            </div>
+            <div class="glass pressure-card reveal">
+              <h3 class="pressure-title">Frontline Organizing</h3>
+              <p class="pressure-text">Youth from affected communities lead with lived experience, culture, and local knowledge.</p>
+              <p class="src">Source: Pacific Climate Warriors; Earth Guardians</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 05 PEOPLE -->
+      <article class="story" id="people" data-section="people">
+        <div class="story-inner">
+          <span class="story-label reveal">05 / People</span>
+          <h2 class="story-h reveal">Solutions do not happen by themselves.</h2>
+          <p class="story-lead reveal">Young people turn climate problems into pressure.</p>
+          <div class="people-grid">
+            <button class="glass person-card reveal" data-activist="greta">
+              <span class="person-index">01</span>
+              <h3 class="person-name">Greta Thunberg</h3>
+              <p class="person-tag">The school strike that became global.</p>
+              <span class="person-open">Open story <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+            </button>
+            <button class="glass person-card reveal" data-activist="vanessa">
+              <span class="person-index">02</span>
+              <h3 class="person-name">Vanessa Nakate</h3>
+              <p class="person-tag">Centering African climate justice.</p>
+              <span class="person-open">Open story <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+            </button>
+            <button class="glass person-card reveal" data-activist="xiuhtezcatl">
+              <span class="person-index">03</span>
+              <h3 class="person-name">Xiuhtezcatl Martinez</h3>
+              <p class="person-tag">Climate justice, Indigenous rights, and youth power.</p>
+              <span class="person-open">Open story <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+            </button>
+            <button class="glass person-card reveal" data-activist="autumn">
+              <span class="person-index">04</span>
+              <h3 class="person-name">Autumn Peltier</h3>
+              <p class="person-tag">The Water Protector.</p>
+              <span class="person-open">Open story <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+            </button>
+            <button class="glass person-card reveal" data-activist="sophia">
+              <span class="person-index">05</span>
+              <h3 class="person-name">Sophia Kianni</h3>
+              <p class="person-tag">Closing the climate language gap.</p>
+              <span class="person-open">Open story <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- 05 MOVEMENTS -->
+      <article class="story" id="movements" data-section="movements">
+        <div class="story-inner">
+          <span class="story-label reveal">06 / Movements</span>
+          <h2 class="story-h reveal">From individual voices to global movements.</h2>
+          <p class="story-lead reveal">Youth activism grows when personal action becomes organized pressure.</p>
+
+          <div class="movement-grid">
+            <div class="glass movement-card reveal">
+              <h3 class="movement-title">Fridays for Future</h3>
+              <ul>
+                <li>Started from Greta Thunberg’s 2018 school strike.</li>
+                <li>Youth-led global climate strike movement.</li>
+                <li>Uses school strikes, global protest days, and digital campaigns.</li>
+                <li>Pushes leaders toward science-based climate action.</li>
+              </ul>
+              <p class="src">Sources: Fridays for Future, “Who We Are”; Fridays for Future, “Our Demands”</p>
+            </div>
+            <div class="glass movement-card reveal">
+              <h3 class="movement-title">Sunrise Movement</h3>
+              <ul>
+                <li>U.S.-based youth climate movement.</li>
+                <li>Connects climate action with economic and racial justice.</li>
+                <li>Pushes for Green New Deal-scale policy.</li>
+                <li>Uses direct action, electoral organizing, and movement-building.</li>
+              </ul>
+              <p class="src">Sources: Sunrise Movement, “About”; Sunrise Movement, “Green New Deal”</p>
+            </div>
+            <div class="glass movement-card reveal">
+              <h3 class="movement-title">Our Children’s Trust</h3>
+              <p class="movement-lead">A nonprofit law firm that helps young people use the courts to fight for a stable climate.</p>
+              <ul>
+                <li>Filed Juliana v. United States with 21 youth plaintiffs.</li>
+                <li>Uses rights-based climate lawsuits.</li>
+                <li>Shows that climate justice can be fought in courtrooms, not just streets.</li>
+                <li>Helped inspire youth climate litigation around the world.</li>
+              </ul>
+              <p class="src">Sources: Our Children’s Trust, “Juliana v. U.S. — Ten Years of Impact”; Our Children’s Trust, “Juliana v. United States”</p>
+            </div>
+            <div class="glass movement-card reveal">
+              <h3 class="movement-title">Pacific Climate Warriors</h3>
+              <p class="movement-lead">A youth-led Pacific Islander network defending island homelands from rising seas and fossil fuel expansion.</p>
+              <ul>
+                <li>Uses the message: “We are not drowning. We are fighting.”</li>
+                <li>Organizes across Pacific Island nations and diaspora communities.</li>
+                <li>Uses storytelling, culture, song, dance, and direct action.</li>
+                <li>Reframes Pacific Islanders as leaders, not helpless victims.</li>
+              </ul>
+              <p class="src">Source: 350 Pacific, “Pacific Climate Warriors”</p>
+            </div>
+          </div>
+
+          <ol class="timeline reveal" aria-label="Timeline of youth climate movements">
+            <li><span class="t-year">2018</span><span class="t-text">Greta begins school strike.</span></li>
+            <li><span class="t-year">2019</span><span class="t-text">Global climate strikes expand.</span></li>
+            <li><span class="t-year">2020</span><span class="t-text">Digital activism grows during COVID-19.</span></li>
+            <li><span class="t-year">2020s</span><span class="t-text">Youth movements connect climate, racial, economic, Indigenous, and intergenerational justice.</span></li>
+          </ol>
+
+          <p class="academic-note reveal">
+            A 2023 <em>Human Rights Education Review</em> article studied 9,400+ Fridays for Future posts and found that digital activism supported peer learning about rights and climate justice.
+            <span class="src">Source: Martinez Sainz and Hanna, 2023</span>
+          </p>
+        </div>
+      </article>
+
+      <!-- 07 ACTION -->
+      <article class="story story--warm" id="action" data-section="action">
+        <div class="story-inner">
+          <span class="story-label reveal">07 / Take Action</span>
+          <h2 class="story-h reveal">What kind of climate activist are you?</h2>
+          <p class="story-lead reveal">Pick a role. Get one action step.</p>
+
+          <div class="role-bar reveal" role="group" aria-label="Choose an activist role">
+            <button class="role-btn" data-role="organizer">Organizer</button>
+            <button class="role-btn" data-role="researcher">Researcher</button>
+            <button class="role-btn" data-role="speaker">Speaker</button>
+            <button class="role-btn" data-role="designer">Designer</button>
+            <button class="role-btn" data-role="policy">Policy Advocate</button>
+            <button class="role-btn" data-role="translator">Translator</button>
+          </div>
+
+          <div class="glass role-result reveal" id="roleResult" aria-live="polite">
+            <p class="role-placeholder">Choose a role above to reveal your action step.</p>
+          </div>
+
+          <p class="final-line reveal">The movement does not end when the website ends.</p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============================ ABOUT VIEW ============================ -->
+  <section id="view-about" class="view view--centered" aria-label="About this project" hidden>
+    <div class="centered-inner reveal">
+      <span class="story-label">About</span>
+      <h2 class="centered-h">About This Project</h2>
+      <p class="centered-text">
+        This project explores how young people are leading the climate justice movement. Instead of
+        treating climate change only as an environmental issue, it shows how climate change connects to
+        inequality, human rights, race, income, geography, Indigenous rights, and future generations.
+        Through youth activists and movements, the project shows how young people use protest, policy,
+        education, digital activism, lawsuits, and storytelling to demand change.
+      </p>
+      <button class="btn btn--primary" data-goto="home">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>
+        <span>Back Home</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- ============================ WORKS CITED VIEW ============================ -->
+  <section id="view-cited" class="view view--cited" aria-label="Works cited" hidden>
+    <div class="cited-inner">
+      <header class="cited-head reveal">
+        <span class="story-label">References</span>
+        <h2 class="centered-h">Works Cited</h2>
+        <button class="btn btn--ghost" data-goto="home">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>
+          <span>Back Home</span>
+        </button>
+      </header>
+      <ol class="citation-list">
+        <li class="reveal">United Nations Development Programme. “Climate Change Is a Matter of Justice – Here’s Why.” UNDP Climate Promise, 30 June 2023, climatepromise.undp.org/news-and-stories/climate-change-matter-justice-heres-why.</li>
+        <li class="reveal">Intergovernmental Panel on Climate Change. “Summary for Policymakers.” Climate Change 2022: Impacts, Adaptation and Vulnerability, IPCC, 2022, www.ipcc.ch/report/ar6/wg2/chapter/summary-for-policymakers/.</li>
+        <li class="reveal">Intergovernmental Panel on Climate Change. Climate Change 2023: Synthesis Report. IPCC, 2023, www.ipcc.ch/report/ar6/syr/.</li>
+        <li class="reveal">National Oceanic and Atmospheric Administration. “Climate Change Impacts Are Increasing for Americans.” NOAA, 14 Nov. 2023, www.noaa.gov/news-release/climate-change-impacts-are-increasing-for-americans.</li>
+        <li class="reveal">Fridays for Future. “Who We Are.” Fridays for Future, fridaysforfuture.org/what-we-do/who-we-are/.</li>
+        <li class="reveal">Fridays for Future. “Our Demands.” Fridays for Future, fridaysforfuture.org/what-we-do/our-demands/.</li>
+        <li class="reveal">Encyclopaedia Britannica. “Greta Thunberg.” Britannica, www.britannica.com/biography/Greta-Thunberg.</li>
+        <li class="reveal">UNICEF. “Vanessa Nakate.” UNICEF Goodwill Ambassadors, www.unicef.org/goodwill-ambassadors/vanessa-nakate.</li>
+        <li class="reveal">United Nations. “Vanessa Nakate: Climate Change Is about the People.” United Nations, www.un.org/en/climatechange/vanessa-nakate-climate-change-is-about-people.</li>
+        <li class="reveal">Martinez, Xiuhtezcatl. “Activism.” Xiuhtezcatl, xiuhtezcatl.com/activism.</li>
+        <li class="reveal">Earth Guardians. “Earth Guardians.” Earth Guardians, www.earthguardians.org/.</li>
+        <li class="reveal">Our Children’s Trust. “Juliana v. United States.” Our Children’s Trust, www.ourchildrenstrust.org/juliana-v-us.</li>
+        <li class="reveal">Sunrise Movement. “About.” Sunrise Movement, www.sunrisemovement.org/about/.</li>
+        <li class="reveal">Sunrise Movement. “Green New Deal.” Sunrise Movement, www.sunrisemovement.org/green-new-deal/.</li>
+        <li class="reveal">Martinez Sainz, Gabriela, and Amy Hanna. “Youth Digital Activism, Social Media and Human Rights Education: The Fridays for Future Movement.” Human Rights Education Review, 2023. ERIC, eric.ed.gov/?id=EJ1410411.</li>
+        <li class="reveal">NASA. “Climate Change.” NASA Science, science.nasa.gov/climate-change/.</li>
+        <li class="reveal">Intergovernmental Panel on Climate Change. “Figures.” Climate Change 2022: Impacts, Adaptation and Vulnerability, IPCC, www.ipcc.ch/report/ar6/wg2/figures/.</li>
+        <li class="reveal">Fridays for Future. “Action Map.” Fridays for Future, fridaysforfuture.org/action-map/.</li>
+        <li class="reveal">“Autumn Peltier: Meet the ‘Water Protector’ of Canada’s First Nations.” CNN, 9 Aug. 2022, www.cnn.com/2022/08/09/americas/autumn-peltier-water-protector-first-nations-canada-spc/index.html.</li>
+        <li class="reveal">“Why Climate Cardinals?” Climate Cardinals, www.climatecardinals.org/why-us. Accessed 29 May 2026.</li>
+        <li class="reveal">“Juliana v. U.S. — Ten Years of Impact.” Our Children’s Trust, 10 Apr. 2025, www.ourchildrenstrust.org/blog/juliana-v-us-10-years-of-impact.</li>
+        <li class="reveal">“Pacific Climate Warriors.” 350 Pacific, 350pacific.org/pacific-climate-warriors/. Accessed 29 May 2026.</li>
+        <li class="reveal">“Greening Education Partnership.” UNESCO, www.unesco.org/en/sustainable-development/education/greening-future. Accessed 29 May 2026.</li>
+        <li class="reveal">“Heat Islands and Equity.” U.S. Environmental Protection Agency, www.epa.gov/heatislands. Accessed 29 May 2026.</li>
+        <li class="reveal">“Reduce Heat Islands.” U.S. Environmental Protection Agency, www.epa.gov/green-infrastructure/reduce-heat-islands. Accessed 29 May 2026.</li>
+        <li class="reveal">“Eco-Schools USA.” National Wildlife Federation, www.nwf.org/Eco-Schools-USA. Accessed 29 May 2026.</li>
+        <li class="reveal">“Does Your City Need a ‘Youth Council’ for Climate Change?” Reasons to Be Cheerful, 14 Dec. 2021, reasonstobecheerful.world/climate-change-youth-councils-san-antonio-tempe/.</li>
+        <li class="reveal">Neas, Sally, et al. “Young People’s Climate Activism: A Review of the Literature.” Frontiers in Political Science, vol. 4, 2022, article 940876.</li>
+        <li class="reveal">Hickman, Caroline, et al. “Climate Anxiety in Children and Young People and Their Beliefs about Government Responses to Climate Change: A Global Survey.” The Lancet Planetary Health, vol. 5, no. 12, 2021, pp. e863–e873.</li>
+        <li class="reveal">Tafon, Ralph, and Fred Saunders. “Toward Transformative Youth Climate Justice: Why Youth Agency Is Important and Six Critical Areas for Transformative Youth Activism, Policy, and Research.” PLOS Climate, 2025, doi:10.1371/journal.pclm.0000472.</li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============================ ACTIVIST OVERLAY ============================ -->
+  <div class="overlay" id="overlay" role="dialog" aria-modal="true" aria-labelledby="overlayTitle" hidden>
+    <div class="overlay-backdrop" data-close></div>
+    <div class="overlay-panel glass" role="document">
+      <button class="overlay-close" id="overlayClose" aria-label="Close story" data-close>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+      <div class="overlay-scroll">
+        <p class="overlay-eyebrow" id="overlaySub"></p>
+        <h2 class="overlay-title" id="overlayTitle"></h2>
+        <p class="overlay-story" id="overlayStory"></p>
+
+        <div class="overlay-block">
+          <span class="block-label">Problem</span>
+          <p id="overlayProblem"></p>
+        </div>
+
+        <div class="overlay-block">
+          <span class="block-label">Tactics</span>
+          <ul id="overlayTactics"></ul>
+        </div>
+
+        <div class="overlay-block">
+          <span class="block-label">Impact</span>
+          <p id="overlayImpact"></p>
+        </div>
+
+        <div class="overlay-block">
+          <span class="block-label">Sources</span>
+          <ul id="overlaySources" class="overlay-sources"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
